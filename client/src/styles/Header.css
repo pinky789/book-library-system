@@ -1,0 +1,29 @@
+.app-header {
+    background-color: rgb(31, 38, 63);
+    padding: 10px;
+    min-height: 50px;
+}
+.app-header .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo-container img{
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+    line-height: 15px;
+}
+.book_library{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+
+
