@@ -3,7 +3,7 @@ book-library-system
 A classic online book library has all the features of a physical library.
 A web application that displays all the books available in library to user and user can edit, search or add new book into the library.
 
-![alt text](./app-screenshot.png)
+![alt text](./app-screenshot.PNG)
 
 Starting the project
 1.	We created the project using create-react-app
