@@ -6,6 +6,7 @@ import { addBook } from "../actions/books";
 
 const BookList = (props) => {
 
+    const [isLoading, setIsLoading] = React.useState(true);
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -31,10 +32,14 @@ const BookList = (props) => {
 
             dispatch(addBook({id, title, description, count, author}))
         });
+       setIsLoading(!isLoading);
     };
 
-    if(props.books.length === 0){
-        return <h1>No book found in library!!</h1>
+    if(isLoading){
+        return <h1>Loading Books data...</h1>
+    }
+    else if(props.books.length === 0){
+        return <h1>No related book found in library!!</h1>
     }else {
         return(
             <div className="table-container">

@@ -67,7 +67,7 @@ let BookListLayout = ({ id, title, description, author, count }) => {
             </>
     } else{
         tableData =  <><div className="td td-title">
-                         <input  className="td" type="text" className="input-data" size ="20" defaultValue={title} ref={(input) => inputRef.current['book_title'] = input} required="required"/>
+                         <input className="td" type="text" className="input-data" size ="20" defaultValue={title} ref={(input) => inputRef.current['book_title'] = input} required="required"/>
                     </div>
                     <div className="td td-author">
                         <input className="td" type="text" className="input-data" size ="20" defaultValue={author} ref={(input) => inputRef.current['book_author'] = input} required="required"/>
